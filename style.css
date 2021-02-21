@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*---------Setting up typography styles---------*/
+/* Header one */
+
+h1 {
+font-family: 'Red Hat Display', sans-serif;
+font-style: normal;
+font-weight: Bold;
+font-size: 62px;
+line-height: 100px;
+margin-bottom: 0;
+word-break: normal;
+hyphens: auto;
+}
+
+/* Header two */
+h2 {
+font-family: 'Red Hat Display', sans-serif;
+font-style: normal;
+font-weight: Bold;
+font-size: 30px;
+line-height: 50px;
+text-align: center;
+margin-top: 2em;
+margin-bottom: 0;
+margin-right: 10%;
+margin-left: 10%;
+word-break: normal;
+hyphens: auto;
+}
+
+/* Header three */
+h3{
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 20px;
+  line-height: 10px;
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: 0;
+  margin-right: 10vw;
+  margin-left: 10%;
+  word-break: normal;
+  hyphens: auto;
+  color:#7E400D;
+}
+
+/* Header four */
+h4{
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 24px;
+  line-height: 10px;
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: 0;
+  margin-right: 10vw;
+  margin-left: 10%;
+  word-break: normal;
+  hyphens: auto;
+  color:#7E400D;
+}
+
+/* Body */
+p {
+font-family: 'Nunito Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 29px;
+}
+
+/* Brown */
+.brown {
+color: #7E400D;
+}
+
+.brown2{
+  color: #7E400D;
+}
+
+/* darkbrown */
+.darkbrown {
+color: #341801;
+}
+
+/* introduction */
+.introduction{
+  color: #341801;
+  grid-column: span 12;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.titleingredients{
+  color: #7E400D;
+}
+
+.ingredients{
+  color:#341801;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.titletiming{
+  color: #7E400D;
+}
+
+.timingparagraph{
+  color:#341801;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 0px;
+  margin-left: 11.5vw;
+}
+
+.instructiontext{
+  color: #341801;
+  grid-column: span 12;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.bottomnotetext{
+  color:#341801;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: small;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 10%;
+}
+
+
+/*---------Defining grid---------*/
+.gridcontainer {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+
+
+/*---------Defining content columns---------*/
+
+.hero-image {
+  background-image: url("img/mango-sago-heading.jpg");
+  grid-column: span 7;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.right-panel {
+  grid-column: span 7;
+  background-color:#FFFFFF;
+}
+
+.hero-text {
+  padding:10% 10% 0;
+}
+
+.about{
+  background-color: #FFF9EA;
+  display:inline-block;
+}
+
+.boxes{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+
+.box1{
+  width:30%;
+  text-align:left;
+  margin-right:0vw;
+  margin-left:0vw;
+}
+
+.box2{
+  width:40%;
+  text-align:left;
+}
+
+
+.instructiontitle{
+  background-color: #FFF9EA;
+  color: #7E400D;
+  text-align:center;
+}
+
+.image{
+  grid-column: span 12;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+hr{
+  margin-top:2vw;
+  border-top:1.5px solid;
+  color:#7E400D;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+a{
+  color:#341801;
+}
+
+a:hover{
+  color:#7E400D;
+}
+
+.footer{
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  margin-left: 10%;
+}
+
+
+/*---------Media queries---------*/
+
+@media (max-width:1083px){
+
+  .hero-image{
+    height:90vh;
+  }
+  .right-panel {
+    min-height:100vh;
+
+  }
+}
+
+@media (min-width:1084px) {
+html {
+  font-size: 1vw;
+}
+.hero-image {
+    height: 100vh;
+}
+  }
