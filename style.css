@@ -274,3 +274,20 @@ html {
     height: 100vh;
 }
   }
+
+
+@media(max-width:684px){
+  .boxes{
+    width:100%;
+  }
+  .box1{
+    width:100%;
+    margin-right:0vw;
+    margin-left:5vw;
+  }
+  .box2{
+    width:100%;
+    margin-right:10vw;
+    margin-left:0vw;
+  }
+}
